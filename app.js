@@ -10,13 +10,11 @@ var log = function(entry) {
 var server = http.createServer(function (req, res) {
     if (req.method === 'POST') {
         var body = '';
-                       app.post("/", function(req,res)
-{
-  var num1= Number(req.body.num1);  //num1 is coming from index.htmml from form
+        var num1= Number(req.body.num1);  //num1 is coming from index.htmml from form
   var num2= Number(req.body.num2);
   var result= num1+num2;
   res.send("result is "+ result);
-})
+                    
    
         req.on('data', function(chunk) {
             body += chunk;
